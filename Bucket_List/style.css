@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #6c5ce7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.bucket-list {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.bucket-item {
+    background-color: #f7e8d4;
+    border: 2px solid #e5e5e5;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.bucket-item:hover {
+    background-color:#ffcb77; /* Yellowish hover effect */
+}
+
+input[type="checkbox"] {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Strikethrough effect when checked using :checked selector */
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #888;
+}
+
+footer {
+    background-color: #6c5ce7;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+    
+    .bucket-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
